@@ -6,9 +6,17 @@
 
     switch (input)
     {
+        case "13":
+            var strings = "MCMXCIV";
+            int result = _13_Roman_to_Integer.RomanToInt(strings);
+
+            Console.WriteLine(result); 
+            Console.WriteLine();
+            break;
+
         case "26":
             var nums = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-            int result = _26_Remove_Duplicates_from_Sorted_Array.RemoveDuplicates(nums);
+            result = _26_Remove_Duplicates_from_Sorted_Array.RemoveDuplicates(nums);
 
             Console.WriteLine(result);
             nums.ToList().ForEach(x => Console.Write($"{x} "));
@@ -30,6 +38,19 @@
 
             Console.WriteLine(result);
             nums.ToList().ForEach(x => Console.Write($"{x} "));
+            break;
+
+        case "58":
+            strings = "   fly me   to   the moon  ";
+            result = _58_Length_of_Last_Word.LengthOfLastWord(strings);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            strings = "luffy is still joyboy";
+            result = _58_Length_of_Last_Word.LengthOfLastWord(strings);
+
+            Console.WriteLine(result);
             break;
 
         case "88":
@@ -71,6 +92,25 @@
 
             Console.WriteLine(result);
             nums.ToList().ForEach(x => Console.Write($"{x} "));
+            break;
+
+        case "141":
+            var ll = new ListNode(3);
+            ll.next = new ListNode(2);
+            ll.next.next = new ListNode(0);
+            ll.next.next.next = new ListNode(-4);
+            ll.next.next.next.next = ll.next;
+            var cycle = _141_Linked_List_Cycle.HasCycle(ll);
+
+            Console.WriteLine(cycle);
+            Console.WriteLine();
+
+            ll = null;
+            cycle = _141_Linked_List_Cycle.HasCycle(ll);
+
+            Console.WriteLine(cycle);
+            Console.WriteLine();
+
             break;
 
         case "169":

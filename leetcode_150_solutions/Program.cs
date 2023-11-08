@@ -14,6 +14,14 @@
             Console.WriteLine();
             break;
 
+        case "14":
+            string[] strArr = new string[] { "flower", "flow", "flight" };
+            string res = _14_Longest_Common_Prefix.LongestCommonPrefix(strArr);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
+            break;
+
         case "26":
             var nums = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
             result = _26_Remove_Duplicates_from_Sorted_Array.RemoveDuplicates(nums);
@@ -21,6 +29,22 @@
             Console.WriteLine(result);
             nums.ToList().ForEach(x => Console.Write($"{x} "));
 
+            Console.WriteLine();
+            break;
+
+        case "28":
+            var haystack = "missisissipi";
+            var needle = "issi";
+            result = _28_Find_the_Index_of_the_First_Occurrence_in_a_String.StrStr(haystack, needle);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            haystack = "pneumonoultramicroscopicsilicovolcanoconiosis";
+            needle = "sis";
+            result = _28_Find_the_Index_of_the_First_Occurrence_in_a_String.StrStr(haystack, needle);
+
+            Console.WriteLine(result);
             Console.WriteLine();
             break;
 

@@ -118,6 +118,26 @@
             nums.ToList().ForEach(x => Console.Write($"{x} "));
             break;
 
+        case "125":
+            strings = "A man, a plan, a canal: Panama";
+            bool boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            strings = " ";
+            boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            strings = "0P";
+            boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
         case "141":
             var ll = new ListNode(3);
             ll.next = new ListNode(2);
@@ -149,6 +169,22 @@
             result = _169_Majority_Element.MajorityElement(nums);
 
             Console.WriteLine(result);
+            break;
+
+        case "392":
+            string subSeq = "abc";
+            strings = "ahbgdc";
+            boolRes = _392_Is_Subsequence.IsSubsequence(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            subSeq = "b";
+            strings = "abc";
+            boolRes = _392_Is_Subsequence.IsSubsequence(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
             break;
 
         default:

@@ -162,7 +162,6 @@
             result = _169_Majority_Element.MajorityElement(nums);
 
             Console.WriteLine(result);
-
             Console.WriteLine();
 
             nums = new int[] { 4, 5, 4 };
@@ -171,8 +170,39 @@
             Console.WriteLine(result);
             break;
 
+        case "205":
+            var subSeq = "badc";
+            strings = "baba";
+            boolRes = _205_Isomorphic_Strings.IsIsomorphic(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            subSeq = "paper";
+            strings = "title";
+            boolRes = _205_Isomorphic_Strings.IsIsomorphic(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
+        case "383":
+            subSeq = "aa";
+            strings = "aab";
+            boolRes = _383_Ransom_Note.CanConstruct(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            subSeq = "aa";
+            strings = "ab";
+            boolRes = _383_Ransom_Note.CanConstruct(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            break;
+
         case "392":
-            string subSeq = "abc";
+            subSeq = "abc";
             strings = "ahbgdc";
             boolRes = _392_Is_Subsequence.IsSubsequence(subSeq, strings);
 

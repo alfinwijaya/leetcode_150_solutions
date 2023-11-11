@@ -186,6 +186,22 @@
             Console.WriteLine();
             break;
 
+        case "290":
+            subSeq = "abba";
+            strings = "dog cat cat dog";
+            boolRes = _290_Word_Pattern.WordPattern(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            subSeq = "abba";
+            strings = "dog cat cat fish";
+            boolRes = _290_Word_Pattern.WordPattern(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+        
         case "383":
             subSeq = "aa";
             strings = "aab";

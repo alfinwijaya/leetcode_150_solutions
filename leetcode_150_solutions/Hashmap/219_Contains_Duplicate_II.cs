@@ -14,10 +14,7 @@
                     return true;
                 }
             }
-            else
-            {
-                numsDict[nums[i]] = i;
-            }
+            numsDict[nums[i]] = i;
         }
         return false;
     }

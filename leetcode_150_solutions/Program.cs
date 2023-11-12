@@ -6,6 +6,15 @@
 
     switch (input)
     {
+        case "1":
+            int[] arr = new int[] { -3, 4, 3, 90 };
+            int k = 9;
+            var resArr = _1_Two_Sum.TwoSum(arr, 0);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
         case "13":
             var strings = "MCMXCIV";
             int result = _13_Roman_to_Integer.RomanToInt(strings);
@@ -181,6 +190,15 @@
             subSeq = "paper";
             strings = "title";
             boolRes = _205_Isomorphic_Strings.IsIsomorphic(subSeq, strings);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
+        case "219":
+            arr = new int[] { 1, 0, 1, 1 };
+            k = 1;
+            boolRes = _219_Contains_Duplicate_II.ContainsNearbyDuplicate(arr, 0);
 
             Console.WriteLine(boolRes);
             Console.WriteLine();

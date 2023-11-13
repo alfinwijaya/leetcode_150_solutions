@@ -204,6 +204,26 @@
             Console.WriteLine();
             break;
 
+        case "228":
+            arr = new int[] { 0, 2, 3, 4, 6, 8, 9 };
+            var resList = _228_Summary_Ranges.SummaryRanges(arr);
+
+            resList.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+
+            arr = new int[] { 0, 1, 2, 4, 5, 7 };
+            resList = _228_Summary_Ranges.SummaryRanges(arr);
+
+            resList.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+
+            arr = new int[] { 0, 1, 2 };
+            resList = _228_Summary_Ranges.SummaryRanges(arr);
+
+            resList.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
         case "290":
             subSeq = "abba";
             strings = "dog cat cat dog";

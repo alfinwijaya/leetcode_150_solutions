@@ -17,19 +17,10 @@ public static class _104_Maximum_Depth_of_Binary_Tree
     {
         if (root == null) return 0;
 
-        Console.Write(root.val + " ");
+        left += MaxDepth(root.left);
+        right += MaxDepth(root.right);
 
-        if (root.left != null)
-        {
-            int l = MaxDepth(root.left);
-            left += l;
-        }
-
-        if (root.right != null)
-        {
-            int r = MaxDepth(root.right);
-            right += r;
-        }
+        Console.WriteLine("Sedang di:" + root.val + "  Left: " + left + " Right: " + right);
 
         return Math.Max(left, right);
     }

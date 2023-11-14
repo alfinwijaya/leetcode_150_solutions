@@ -31,6 +31,23 @@
             Console.WriteLine();
             break;
 
+        case "21":
+            var ll2 = new ListNode2(5);
+
+            var ll3 = new ListNode2(1);
+            ll3.next = new ListNode2(2);
+            ll3.next.next = new ListNode2(4);
+            var merged = _21_Merge_Two_Sorted_Lists.MergeTwoLists(ll2, ll3);
+
+            while (merged != null)
+            {
+                Console.Write(merged.val + " ");
+                merged = merged.next;
+            }
+
+            Console.WriteLine();
+            break;
+
         case "26":
             var nums = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
             result = _26_Remove_Duplicates_from_Sorted_Array.RemoveDuplicates(nums);
@@ -109,6 +126,22 @@
             nums1 = new int[] { 2, 0 }; m = 1; nums2 = new int[] { 1 }; n = 1;
             _88_MergeSortedArray.Merge(nums1, m, nums2, n);
             nums1.ToList().ForEach(x => Console.Write($"{x} "));
+            break;
+
+        case "104":
+            TreeNode tree = new TreeNode(
+                3,
+                new TreeNode(9),
+                new TreeNode(20,
+                    new TreeNode(15),
+                    new TreeNode(7)
+                )
+            );
+
+            result = _104_Maximum_Depth_of_Binary_Tree.MaxDepth(tree);
+            Console.WriteLine();
+            Console.WriteLine(result);
+
             break;
 
         case "121":

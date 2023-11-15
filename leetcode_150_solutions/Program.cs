@@ -128,8 +128,27 @@
             nums1.ToList().ForEach(x => Console.Write($"{x} "));
             break;
 
-        case "104":
+        case "100":
             TreeNode tree = new TreeNode(
+                1,
+                new TreeNode(2),
+                new TreeNode(3)
+            );
+
+            TreeNode tree2 = new TreeNode(
+                1,
+                new TreeNode(2),
+                new TreeNode(3)
+            );
+
+            var same = _100_Same_Tree.IsSameTree(tree, tree2);
+            Console.WriteLine(same);
+            Console.WriteLine();
+
+            break;
+
+        case "104":
+            tree = new TreeNode(
                 3,
                 new TreeNode(9),
                 new TreeNode(20,
@@ -141,6 +160,19 @@
             result = _104_Maximum_Depth_of_Binary_Tree.MaxDepth(tree);
             Console.WriteLine();
             Console.WriteLine(result);
+
+            break;
+
+        case "112":
+            tree = new TreeNode(
+                1,
+                new TreeNode(2)
+            );
+            int target = 1;
+
+            var has = _112_Path_Sum.HasPathSum(tree, target);
+            Console.WriteLine(has);
+            Console.WriteLine();
 
             break;
 

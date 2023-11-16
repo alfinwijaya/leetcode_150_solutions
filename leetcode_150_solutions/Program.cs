@@ -147,6 +147,19 @@
 
             break;
 
+        case "101":
+            tree = new TreeNode(
+                1,
+                new TreeNode(2),
+                new TreeNode(3)
+            );
+
+            var mirrored = _101_Symmetric_Tree.IsSymmetric(tree);
+            Console.WriteLine(mirrored);
+            Console.WriteLine();
+
+            break;
+
         case "104":
             tree = new TreeNode(
                 3,
@@ -266,6 +279,34 @@
             boolRes = _219_Contains_Duplicate_II.ContainsNearbyDuplicate(arr, 0);
 
             Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
+        case "226":
+            tree = new TreeNode(
+                1,
+                new TreeNode(2),
+                new TreeNode(3)
+            );
+
+            var inverted = _226_Invert_Binary_Tree.InvertTree(tree);
+            Console.WriteLine(inverted);
+            Console.WriteLine();
+
+            tree = new TreeNode(
+                4,
+                new TreeNode(2,
+                    new TreeNode(1),
+                    new TreeNode(3)
+                ),
+                new TreeNode(7,
+                    new TreeNode(6),
+                    new TreeNode(9)
+                )
+            );
+
+            inverted = _226_Invert_Binary_Tree.InvertTree(tree);
+            Console.WriteLine(inverted);
             Console.WriteLine();
             break;
 

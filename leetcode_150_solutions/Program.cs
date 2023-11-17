@@ -282,6 +282,21 @@
             Console.WriteLine();
             break;
 
+        case "222":
+            tree = new TreeNode(
+                1,
+                new TreeNode(2,
+                    new TreeNode(4),
+                    new TreeNode(5)),
+                new TreeNode(3,
+                    new TreeNode(6))
+            );
+
+            result = _222_Count_Complete_Tree_Nodes.CountNodes(tree);
+            Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
         case "226":
             tree = new TreeNode(
                 1,

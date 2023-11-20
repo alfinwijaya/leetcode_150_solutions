@@ -90,6 +90,28 @@
             nums.ToList().ForEach(x => Console.Write($"{x} "));
             break;
 
+        case "35":
+            nums = new int[] { 1, 3 };
+            result = _35_Search_Insert_Position.SearchInsert(nums, 2);
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            nums = new int[] { 1, 3, 5, 6 };
+            result = _35_Search_Insert_Position.SearchInsert(nums, 5);
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            nums = new int[] { 1, 3, 5, 6 };
+            result = _35_Search_Insert_Position.SearchInsert(nums, 2);
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            nums = new int[] { 1, 3, 5, 6 };
+            result = _35_Search_Insert_Position.SearchInsert(nums, 7);
+            Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
         case "58":
             strings = "   fly me   to   the moon  ";
             result = _58_Length_of_Last_Word.LengthOfLastWord(strings);
@@ -389,6 +411,21 @@
             boolRes = _392_Is_Subsequence.IsSubsequence(subSeq, strings);
 
             Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
+        case "637":
+            tree = new TreeNode(
+                3,
+                new TreeNode(9,
+                    new TreeNode(10)),
+                new TreeNode(20,
+                    new TreeNode(15),
+                    new TreeNode(7))
+            );
+
+            var doubleResArr = _637_Average_of_Levels_in_Binary_Tree.AverageOfLevels(tree);
+            doubleResArr.ToList().ForEach(x => Console.Write($"{x} "));
             Console.WriteLine();
             break;
 

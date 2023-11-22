@@ -125,6 +125,19 @@
             Console.WriteLine(result);
             break;
 
+        case "70":
+            result = _70_Climbing_Stairs.ClimbStairs(5);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            result = _70_Climbing_Stairs.ClimbStairs(45);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            break;
+
         case "88":
 
             var nums1 = new int[] { 1, 2, 3, 0, 0, 0 }; var m = 3; var nums2 = new int[] { 2, 5, 6 }; var n = 3;
@@ -277,6 +290,14 @@
             result = _169_Majority_Element.MajorityElement(nums);
 
             Console.WriteLine(result);
+            break;
+
+        case "189":
+            nums = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+            _189_Rotate_Array.Rotate(nums, 3);
+
+            nums.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
             break;
 
         case "205":

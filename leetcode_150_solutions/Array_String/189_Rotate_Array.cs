@@ -2,6 +2,18 @@
 {
     public static void Rotate(int[] nums, int k)
     {
+        List<int> cmpr = new List<int>(nums); 
+
+        for (int j = 0; j < nums.Length; j++)
+        {
+            int newpos = (j + k) % nums.Length;
+            nums[newpos] = cmpr[j];
+        }
+    }
+
+    /* 2nd Solution
+    public static void Rotate(int[] nums, int k)
+    {
         k = k % nums.Length;
 
         Reverse(nums, 0, nums.Length - 1);
@@ -18,5 +30,5 @@
             end--;
         }
     }
-    
+    */
 }

@@ -112,6 +112,14 @@
             Console.WriteLine();
             break;
 
+        case "55":
+            nums = new int[] { 3, 2, 1, 0, 4 };
+            var boolRes = _55_Jump_Game.CanJump(nums);
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            break;
+
         case "58":
             strings = "   fly me   to   the moon  ";
             result = _58_Length_of_Last_Word.LengthOfLastWord(strings);
@@ -242,7 +250,7 @@
 
         case "125":
             strings = "A man, a plan, a canal: Panama";
-            bool boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
+            boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
 
             Console.WriteLine(boolRes);
             Console.WriteLine();
@@ -385,6 +393,14 @@
             resList = _228_Summary_Ranges.SummaryRanges(arr);
 
             resList.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
+        case "238":
+            arr = new int[] {1, 2, 3, 4 };
+            resArr = _238_Product_of_Array_Except_Self.ProductExceptSelf(arr);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
             Console.WriteLine();
             break;
 

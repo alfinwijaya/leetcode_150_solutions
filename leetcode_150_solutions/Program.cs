@@ -1,4 +1,6 @@
-﻿while (true)
+﻿using System.Text;
+
+while (true)
 {
     Console.Clear();
     Console.Write("input number: ");
@@ -248,6 +250,20 @@
             nums.ToList().ForEach(x => Console.Write($"{x} "));
             break;
 
+        case "122":
+            nums = new int[] { 7, 1, 5, 3, 6, 4 };
+            result = _122_Best_Time_to_Buy_and_Sell_Stock_II.MaxProfit(nums);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            nums = new int[] { 1, 2, 3, 4, 5 };
+            result = _122_Best_Time_to_Buy_and_Sell_Stock_II.MaxProfit(nums);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
         case "125":
             strings = "A man, a plan, a canal: Panama";
             boolRes = _125_Valid_Palindrome.IsPalindrome(strings);
@@ -285,6 +301,26 @@
             Console.WriteLine(cycle);
             Console.WriteLine();
 
+            break;
+
+        case "151":
+            strings = "the sky is blue";
+            res = _151_Reverse_Words_in_a_String.ReverseWords(strings);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
+
+            strings = "  hello world  ";
+            res = _151_Reverse_Words_in_a_String.ReverseWords(strings);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
+
+            strings = "a good   example";
+            res = _151_Reverse_Words_in_a_String.ReverseWords(strings);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
             break;
 
         case "169":

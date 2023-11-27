@@ -322,6 +322,22 @@ while (true)
             Console.WriteLine(res);
             Console.WriteLine();
             break;
+            
+        case "167":
+            nums = new int[] { 2, 7, 11, 15 };
+            target = 9;
+            resArr = _167_Two_Sum_II_Input_Array_Is_Sorted.TwoSum(nums, target);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+
+            nums = new int[] { 2, 3, 4 };
+            target = 6;
+            resArr = _167_Two_Sum_II_Input_Array_Is_Sorted.TwoSum(nums, target);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
 
         case "169":
             nums = new int[] { 2, 2, 1, 1, 1, 2, 2 };
@@ -341,6 +357,20 @@ while (true)
             _189_Rotate_Array.Rotate(nums, 3);
 
             nums.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
+        case "202":
+            k = 19;
+            boolRes = _202_Happy_Number.IsHappy(k);
+
+            Console.WriteLine(boolRes);
+            Console.WriteLine();
+
+            k = 2;
+            boolRes = _202_Happy_Number.IsHappy(k);
+
+            Console.WriteLine(boolRes);
             Console.WriteLine();
             break;
 

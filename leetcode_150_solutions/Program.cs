@@ -17,9 +17,24 @@ while (true)
             Console.WriteLine();
             break;
 
+        case "11":
+            arr = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+            int result = _11_Container_With_Most_Water.MaxArea(arr);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            arr = new int[] { 1, 1 };
+            result = _11_Container_With_Most_Water.MaxArea(arr);
+
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            break;
+
         case "13":
             var strings = "MCMXCIV";
-            int result = _13_Roman_to_Integer.RomanToInt(strings);
+            result = _13_Roman_to_Integer.RomanToInt(strings);
 
             Console.WriteLine(result); 
             Console.WriteLine();
@@ -31,6 +46,24 @@ while (true)
 
             Console.WriteLine(res);
             Console.WriteLine();
+            break;
+
+        case "15":
+            arr = new int[] { -1, 0, 1, 2, -1, -4 };
+            var listRes = _15_3Sum.ThreeSum(arr);
+
+            foreach (var sublist in listRes)
+            {
+                foreach (var element in sublist)
+                {
+                    Console.Write($"{element} ");
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+
             break;
 
         case "21":
@@ -111,6 +144,55 @@ while (true)
             nums = new int[] { 1, 3, 5, 6 };
             result = _35_Search_Insert_Position.SearchInsert(nums, 7);
             Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
+        case "36":
+            char[][] matrix = new char[][] {
+                new char[] {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
+                new char[] {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                new char[] {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                new char[] {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                new char[] {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                new char[] {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+                new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+                new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
+            };
+
+            var sudoku = _36_Valid_Sudoku.IsValidSudoku(matrix);
+            Console.WriteLine(sudoku);
+            Console.WriteLine();
+
+            matrix = new char[][] {
+                new char[] { '.', '.', '.', '.', '5', '.', '.', '1', '.' },
+                new char[] { '.', '4', '.', '3', '.', '.', '.', '.', '.' },
+                new char[] { '.', '.', '.', '.', '.', '3', '.', '.', '1' },
+                new char[] { '8', '.', '.', '.', '.', '.', '.', '2', '.' },
+                new char[] { '.', '.', '2', '.', '7', '.', '.', '.', '.' },
+                new char[] { '.', '1', '5', '.', '.', '.', '.', '.', '.' },
+                new char[] { '.', '.', '.', '.', '.', '2', '.', '.', '.' },
+                new char[] { '.', '2', '.', '9', '.', '.', '.', '.', '.' },
+                new char[] { '.', '.', '4', '.', '.', '.', '.', '.', '.' }
+            };
+
+            sudoku = _36_Valid_Sudoku.IsValidSudoku(matrix);
+            Console.WriteLine(sudoku);
+            break;
+
+        case "49":
+            strArr = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
+            var nestedList = _49_Group_Anagrams.GroupAnagrams(strArr);
+
+            for (int i = 0; i < nestedList.Count; i++)
+            {
+                foreach (var element in nestedList[i])
+                    Console.Write($"{element} ");
+
+                if (i != nestedList.Count - 1)
+                    Console.Write(", ");
+            }
+
             Console.WriteLine();
             break;
 

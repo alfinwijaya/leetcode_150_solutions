@@ -17,6 +17,12 @@ while (true)
             Console.WriteLine();
             break;
 
+        case "9":
+            var palindrome = _9_Palindrome_Number.IsPalindrome(121);
+
+            Console.WriteLine(palindrome);
+            break;
+
         case "11":
             arr = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
             int result = _11_Container_With_Most_Water.MaxArea(arr);

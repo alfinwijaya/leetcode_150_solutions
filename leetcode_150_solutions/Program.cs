@@ -223,6 +223,26 @@ while (true)
             Console.WriteLine(result);
             break;
 
+        case "66":
+            nums = new int[] { 1, 2, 3 };
+            resArr = _66_Plus_One.PlusOne(nums);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+
+            nums = new int[] { 4, 3, 2, 1 };
+            resArr = _66_Plus_One.PlusOne(nums);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+
+            nums = new int[] { 9 };
+            resArr = _66_Plus_One.PlusOne(nums);
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
         case "70":
             result = _70_Climbing_Stairs.ClimbStairs(5);
 

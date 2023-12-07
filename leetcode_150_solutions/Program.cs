@@ -17,6 +17,48 @@ while (true)
             Console.WriteLine();
             break;
 
+        case "2":
+            var ll4 = new ListNode(2);
+            ll4.next = new ListNode(4);
+            ll4.next.next = new ListNode(3);
+
+            var ll5 = new ListNode(5);
+            ll5.next = new ListNode(6);
+            ll5.next.next = new ListNode(4);
+
+            var llSum = _2_Add_Two_Numbers.AddTwoNumbers(ll4, ll5);
+            while (llSum != null)
+            {
+                Console.Write(llSum.val + " ");
+                llSum = llSum.next;
+            }
+
+            Console.WriteLine();
+
+            ll4 = new ListNode(9);
+            ll4.next = new ListNode(9);
+            ll4.next.next = new ListNode(9);
+            ll4.next.next.next = new ListNode(9);
+            ll4.next.next.next.next = new ListNode(9);
+            ll4.next.next.next.next.next = new ListNode(9);
+            ll4.next.next.next.next.next.next = new ListNode(9);
+
+            ll5 = new ListNode(9);
+            ll5.next = new ListNode(9);
+            ll5.next.next = new ListNode(9);
+            ll5.next.next.next = new ListNode(9);
+
+            llSum = _2_Add_Two_Numbers.AddTwoNumbers(ll4, ll5);
+            while (llSum != null)
+            {
+                Console.Write(llSum.val + " ");
+                llSum = llSum.next;
+            }
+
+            Console.WriteLine();
+
+            break;
+
         case "9":
             var palindrome = _9_Palindrome_Number.IsPalindrome(121);
 

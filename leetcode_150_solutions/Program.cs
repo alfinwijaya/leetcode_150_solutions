@@ -434,6 +434,27 @@ while (true)
             Console.WriteLine();
             break;
 
+        case "129":
+            tree = new TreeNode(
+                       0,
+                       new TreeNode(1)
+                   );
+
+            result = _129_Sum_Root_to_Leaf_Numbers.SumNumbers(tree);
+            Console.WriteLine(result);
+            Console.WriteLine();
+
+            tree = new TreeNode(
+                    1,
+                    new TreeNode(2),
+                    new TreeNode(3)
+                );
+
+            result = _129_Sum_Root_to_Leaf_Numbers.SumNumbers(tree);
+            Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
         case "141":
             var ll = new ListNode(3);
             ll.next = new ListNode(2);
@@ -664,6 +685,20 @@ while (true)
             boolRes = _392_Is_Subsequence.IsSubsequence(subSeq, strings);
 
             Console.WriteLine(boolRes);
+            Console.WriteLine();
+            break;
+
+        case "530":
+            tree = new TreeNode(
+                    4,
+                    new TreeNode(2,
+                        new TreeNode(1),
+                        new TreeNode(3)),
+                    new TreeNode(6)
+                    );
+
+            result = _530_Minimum_Absolute_Difference_in_BST.GetMinimumDifference(tree);
+            Console.WriteLine(result);
             Console.WriteLine();
             break;
 

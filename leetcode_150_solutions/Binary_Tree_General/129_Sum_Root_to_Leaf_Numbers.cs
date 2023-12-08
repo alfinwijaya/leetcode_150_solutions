@@ -3,7 +3,7 @@
 public static class _129_Sum_Root_to_Leaf_Numbers
 {
     static List<string> list = new();
-    public static int SumNumbers(TreeNode root, string curr = "")
+    public static int SumNumbers(TreeNode root)
     {
         Traverse(root);
 

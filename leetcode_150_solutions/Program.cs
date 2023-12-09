@@ -540,6 +540,19 @@ while (true)
             Console.WriteLine();
             break;
 
+        case "200":
+            matrix = new char[][] {
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '1', '0', '0' },
+                new char[] { '0', '0', '0', '1', '1' }
+            };
+
+            result = _200_Number_of_Islands.NumIslands(matrix);
+            Console.WriteLine(result);
+            Console.WriteLine();
+            break;
+
         case "202":
             k = 19;
             boolRes = _202_Happy_Number.IsHappy(k);

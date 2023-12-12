@@ -59,6 +59,20 @@ while (true)
 
             break;
 
+        case "6":
+            var strings = "ABC";
+            string res = _6_Zigzag_Conversion.Convert(strings, 1);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
+
+            strings = "PAYPALISHIRING";
+            res = _6_Zigzag_Conversion.Convert(strings, 3);
+
+            Console.WriteLine(res);
+            Console.WriteLine();
+            break;
+
         case "9":
             var palindrome = _9_Palindrome_Number.IsPalindrome(121);
 
@@ -81,7 +95,7 @@ while (true)
             break;
 
         case "13":
-            var strings = "MCMXCIV";
+            strings = "MCMXCIV";
             result = _13_Roman_to_Integer.RomanToInt(strings);
 
             Console.WriteLine(result); 
@@ -90,7 +104,7 @@ while (true)
 
         case "14":
             string[] strArr = new string[] { "flower", "flow", "flight" };
-            string res = _14_Longest_Common_Prefix.LongestCommonPrefix(strArr);
+            res = _14_Longest_Common_Prefix.LongestCommonPrefix(strArr);
 
             Console.WriteLine(res);
             Console.WriteLine();
@@ -241,6 +255,19 @@ while (true)
                     Console.Write(", ");
             }
 
+            Console.WriteLine();
+            break;
+
+        case "54":
+            int[][] matrixInt = new int[][] {
+                new int[] {1, 2, 3, 4},
+                new int[] {5, 6, 7, 8},
+                new int[] {9, 10, 11, 12}
+            };
+
+            resArr = _54_Spiral_Matrix.SpiralOrder(matrixInt).ToArray();
+
+            resArr.ToList().ForEach(x => Console.Write($"{x} "));
             Console.WriteLine();
             break;
 

@@ -398,6 +398,15 @@ while (true)
 
             break;
 
+        case "108":
+            arr = new int[] { -10, -3, 0, 5, 9 };
+
+            var bst = _108_Convert_Sorted_Array_to_Binary_Search_Tree.SortedArrayToBST(arr);
+            Console.WriteLine(bst);
+            Console.WriteLine();
+
+            break;
+
         case "112":
             tree = new TreeNode(
                 1,
@@ -555,6 +564,19 @@ while (true)
             _189_Rotate_Array.Rotate(nums, 3);
 
             nums.ToList().ForEach(x => Console.Write($"{x} "));
+            Console.WriteLine();
+            break;
+
+        case "200":
+            matrix = new char[][] {
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '1', '1', '0', '0', '0' },
+                new char[] { '0', '0', '1', '0', '0' },
+                new char[] { '0', '0', '0', '1', '1' }
+            };
+
+            result = _200_Number_of_Islands.NumIslands(matrix);
+            Console.WriteLine(result);
             Console.WriteLine();
             break;
 

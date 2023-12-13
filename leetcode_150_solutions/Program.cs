@@ -128,6 +128,21 @@ while (true)
 
             break;
 
+        case "19":
+            ll4= new ListNode(1);
+            ll4.next = new ListNode(2);
+
+            llSum = _19_Remove_Nth_Node_From_End_of_List.RemoveNthFromEnd(ll4, 1);
+
+            while (llSum != null)
+            {
+                Console.Write(llSum.val + " ");
+                llSum = llSum.next;
+            }
+
+            Console.WriteLine();
+            break;
+
         case "21":
             var ll2 = new ListNode2(5);
 
@@ -290,6 +305,51 @@ while (true)
             result = _58_Length_of_Last_Word.LengthOfLastWord(strings);
 
             Console.WriteLine(result);
+            break;
+
+        case "61":
+            //ll4 = new ListNode(1);
+            //ll4.next = new ListNode(2);
+
+            //llSum = _61_Rotate_List.RotateRight(ll4, 1);
+
+            //while (llSum != null)
+            //{
+            //    Console.Write(llSum.val + " ");
+            //    llSum = llSum.next;
+            //}
+
+            //Console.WriteLine();
+
+            //ll4 = new ListNode(0);
+            //ll4.next = new ListNode(1);
+            //ll4.next.next = new ListNode(2);
+
+            //llSum = _61_Rotate_List.RotateRight(ll4, 1);
+
+            //while (llSum != null)
+            //{
+            //    Console.Write(llSum.val + " ");
+            //    llSum = llSum.next;
+            //}
+
+            //Console.WriteLine();
+
+            ll4 = new ListNode(1);
+            ll4.next = new ListNode(2);
+            ll4.next.next = new ListNode(3);
+            ll4.next.next.next = new ListNode(4);
+            ll4.next.next.next.next = new ListNode(5);
+
+            llSum = _61_Rotate_List.RotateRight(ll4, 2);
+
+            while (llSum != null)
+            {
+                Console.Write(llSum.val + " ");
+                llSum = llSum.next;
+            }
+
+            Console.WriteLine();
             break;
 
         case "66":
